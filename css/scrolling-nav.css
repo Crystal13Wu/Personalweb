@@ -1,0 +1,375 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        background: rgba(255, 255, 255, 60);
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        background: #fff;
+        padding: 0;
+    }
+    
+}
+
+
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will portfolio with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+{
+    background-color: #cfefe8;
+}
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #A4D0C7;
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+/* End of Underline From Left */
+
+.intro-section {
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-image: url('http://i.imgur.com/efAE0qj.png');
+    
+}
+
+.portfolio-section {
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    background-color: #fff;   
+}
+
+.about-section {
+    color: #fff;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    background: #64a99d;
+}
+
+.contact-section {
+    color: #64a99d;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    background-image: url('http://i.imgur.com/efAE0qj.png');
+}
+
+.footer {
+    background: #64a99d;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    height: 30%;
+    padding-top: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.intro img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.intro-text {
+    margin: 30px;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.page-scroll {
+    background-color: transparent;
+    font-family: 'Poiret One', cursive;
+}
+
+.col-lg-12 {
+    font-family: 'Poiret One', cursive;
+}
+
+
+.name {
+    color: #64a99d;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+}
+
+.skills {
+    color: #8d8d8d;
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    margin-bottom: 230px;
+
+}
+
+.footer a {
+    color: #fff;
+}
+
+/* Gallery */
+.center {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+a.gallery-image {
+  text-decoration: none;
+}
+a.gallery-image img {
+  margin: 20px;
+  height: 120px;
+  width: 180px;
+  object-fit: cover;
+  overflow: hidden;
+}
+a.gallery-image.zoomed {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: 9998;
+  background: rgba(0,0,0,0.8);
+  transition: all 0.5s;
+}
+a.gallery-image.zoomed img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  z-index: 9999;
+  object-fit: contain;
+}
+
+.about-section h2 {
+    font-family: 'Poiret One', cursive;
+}
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-family: 'cwTeXHei', sans-serif; 
+}
+
+.service-item h4 {
+    font-size: 20px;
+
+
+}
+
+.service-item p {
+    font-size: 15px;
+}
+
+.service-item ul {
+    list-style: none;
+}
+
+.fa-circle {
+    text-shadow: 2px 2px #8d8d8d;
+}
+
+.skillbar {
+    font-family: 'Poiret One', cursive;
+    position:relative;
+    display:block;
+    margin: 0 auto;
+    margin-bottom: 15px; 
+    width: 70%;
+    background: #eee;
+    height: 20px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -moz-transition-property:width, background-color;
+    -ms-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
+}
+
+.skillbar-title {
+    position:absolute;
+    top: 0;
+    left: 0;
+    font-size: 13px;
+    color: #fff;
+    background: #000;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.1);
+    padding:0 20px;
+    height:20px;
+    line-height:20px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+    height: 20px;
+    width: 0px;
+    background: #000;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 20px;
+    line-height: 20px;
+    color: #444;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.contact-section h2 {
+    font-family: 'Poiret One', cursive;
+}
+
+.form-group label {
+    color: #64a99d;
+    font-family: 'Poiret One', cursive;
+}
+
+.form-group input {
+    font-family: 'Poiret One', cursive;
+    border-style: dotted;
+}
+
+.form-group textarea {
+    font-family: 'Poiret One', cursive;
+    border-style: dotted;
+}
+
+.btn-default {
+    margin-top: 20px;
+    font-family: 'Poiret One', cursive;
+    color: #fff;
+    background-color: #276f63;
+    border-color: #276f63;
+}
+
+.btn-default:hover {
+    color: #fff;
+    background-color: #A4D0C7;
+    border-color: #A4D0C7;
+}
+
+.btn-default.disabled {
+    margin-top: 20px;
+    font-family: 'Poiret One', cursive;
+    color: #fff;
+    background-color: #276f63;
+    border-color: #276f63;
+}
+
+.btn-default.disabled:hover {
+    color: #fff;
+    background-color: #A4D0C7;
+    border-color: #A4D0C7;
+    
+}
+
+.text-box {
+    box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
